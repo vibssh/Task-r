@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Service} from '../../service/service';
 import {PubSub} from '../../service/pubsub';
+import {TaskComponent} from '../../components/Task-Component/TaskComponent';
+
 const pubsub = PubSub();
 export class TaskListContainer extends Component {
   constructor(props) {
@@ -47,7 +49,11 @@ export class TaskListContainer extends Component {
 
   getTaskSubscription = () => {
     pubsub.subscribe('getData', (data) => {
-      console.log(`Subscribed Data`, data);
+      this.setState({
+        tasksArr: [...this.state.tasksArr, data]
+      })
+
+      console.log(this.state.tasksArr);
     })
   }
 
@@ -60,6 +66,7 @@ export class TaskListContainer extends Component {
     return(
       <div>
         <h1>Welcome to Task'R App</h1>
+        <TaskComponent tasks={this.state.tasksArr}/>
       </div>
     );
   }
