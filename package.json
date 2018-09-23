@@ -2,8 +2,10 @@
   "name": "taskerapp",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vibssh.github.io/Task-r/",
+  "homepage": "https://vibssh.github.io",
   "dependencies": {
+    "firebase": "^5.5.1",
+    "firestore": "^1.1.6",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5",
