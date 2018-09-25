@@ -1,6 +1,6 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase/app';
 import 'firebase/database';
-import 'firebase/firestore';
+require('firebase/firestore');
 import {Config} from './config'
 firebase.initializeApp(Config);
 export const db = firebase.firestore();
