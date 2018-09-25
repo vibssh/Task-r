@@ -9,7 +9,6 @@ export const HeaderComponent = (props) => {
       <HeaderTitle>
         <h1>{props.headerTitle}</h1>
       </HeaderTitle>
-
     </Header>
   );
 }
