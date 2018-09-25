@@ -5,6 +5,7 @@ export const Header = styled.header`
   padding: 4em;
   background: papayawhip;
   text-align: left;
+  position : relative;
 `
 
 export const Logo = styled.div`

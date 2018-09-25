@@ -9,15 +9,26 @@ export const Button = styled.button`
   color: palevioletred;
   border: 2px solid palevioletred;
   border-radius: 4px;
-
+  cursor: pointer;
+  transition: all .3s linear;
 
   ${props => props.primary && css `
     background: #ffffff;
+    &:hover {
+      background: palevioletred;
+      color: #ffffff;
+    }
   `}
 
   ${props => props.secondary && css `
     background: palevioletred;
     color: #ffffff;
+
+    &:hover {
+      background: #ffffff;
+      color: palevioletred;
+    }
+
   `}
 
   ${props => props.tertiary && css `

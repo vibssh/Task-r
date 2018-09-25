@@ -16,9 +16,11 @@ export class AddTaskContainer extends Component {
     if(taskData.task !== null || taskData.task !== undefined || taskData.task !== "") {
       //Do the post of data here
       Service.postATask(taskData).then(()=>{
-          addTaskField.value='';
-          addTaskField.focus();
+
       }).catch(err=>console.log(err));
+      // This is moved outside the post event for offline use.
+      addTaskField.value='';
+      addTaskField.focus();
     }
   }
 
