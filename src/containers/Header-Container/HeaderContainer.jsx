@@ -22,7 +22,7 @@ export class HeaderContainer extends Component {
         status: 'online'
         });
         setTimeout(()=> {
-          statusBar.style.opacity = 0;
+          this.setState({status: ''});
         }, 2500)
 
     } else {
