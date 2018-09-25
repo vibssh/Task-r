@@ -59,7 +59,7 @@ export class AddTaskContainer extends Component {
         <form>
           <label htmlFor="addTask">Add Task</label>
           <InputField type="text" id="addTask" name="addTask" placeholder="Prepare slides.."/>
-          <ButtonComponent buttonText='Add Task' tertiary='true' buttonType='submit' buttonId='addTaskBtn'buttonEvent={this.eventHandler} />
+          <ButtonComponent buttonText='Add Task' tertiary='true' buttonType='submit' buttonId='addTaskBtn' buttonEvent={this.eventHandler} />
         </form>
       </Container>
     );

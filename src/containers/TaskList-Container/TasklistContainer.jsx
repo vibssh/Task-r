@@ -80,7 +80,6 @@ export class TaskListContainer extends Component {
     })
   }
 
-
   updateEventUIHandler = (e) => {
     e.preventDefault();
     const addInputField = document.querySelector('#addTask');
