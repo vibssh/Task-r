@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 
 import {HeaderComponent} from '../../components/Header-Component/HeaderComponent';
 
-let condition = null;
 export class HeaderContainer extends Component {
   constructor(props) {
     super(props);
@@ -15,7 +14,6 @@ export class HeaderContainer extends Component {
 
   //Define your Offline online script here to change the text of the state
   updateOnlineStatus = () => {
-    const statusBar = document.querySelector('#statusbar');
     if(navigator.onLine) {
       this.setState({
         textStatus: 'You\'re currently Online',
@@ -31,8 +29,6 @@ export class HeaderContainer extends Component {
         status: 'offline'
         })
     }
-
-
   }
 
   componentDidMount() {
