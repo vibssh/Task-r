@@ -3,6 +3,7 @@ import './App.css';
 
 import {HeaderContainer} from './containers/Header-Container/HeaderContainer';
 import {TaskListContainer} from './containers/TaskList-Container/TasklistContainer';
+import {AddTaskContainer} from './containers/AddTask-Container/AddTaskContainer';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div className="App">
         <HeaderContainer />
         <TaskListContainer />
+        <AddTaskContainer />
       </div>
     );
   }
